@@ -1,19 +1,19 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue';
+import Button from 'primevue/button';
 </script>
 
 <template>
-	<div class="mx-auto flex p-6">
-		<a href="https://vite.dev" target="_blank">
-			<img src="/vite.svg" class="logo" alt="Vite logo" />
-		</a>
-		<a href="https://vuejs.org/" target="_blank">
-			<img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-		</a>
+	<div class="p-4 mx-auto">
+		<div
+			class="grid content-center h-screen grid-cols-1 gap-4 justify-items-center"
+		>
+			<!-- Proof that TailwindCSS is setup correctly -->
+			<h1 class="text-3xl font-bold underline">Hello world!</h1>
+
+			<!-- Proof that PrimeVue is setup correctly -->
+			<Button>I'm a PrimeVue Button!</Button>
+		</div>
 	</div>
-	<HelloWorld msg="Vite + Vue" />
-	<!-- Proof that TailwindCSS is setup correctly -->
-	<!-- <h1 class="text-3xl font-bold underline">Hello world!</h1> -->
 </template>
 
 <style scoped>
