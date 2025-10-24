@@ -1,19 +1,9 @@
 <script setup lang="ts">
-import Button from 'primevue/button';
+import { RouterView } from 'vue-router';
 </script>
 
 <template>
-	<div class="p-4 mx-auto">
-		<div
-			class="grid content-center h-screen grid-cols-1 gap-4 justify-items-center"
-		>
-			<!-- Proof that TailwindCSS is setup correctly -->
-			<h1 class="text-3xl font-bold underline">Hello world!</h1>
-
-			<!-- Proof that PrimeVue is setup correctly -->
-			<Button>I'm a PrimeVue Button!</Button>
-		</div>
-	</div>
+	<RouterView />
 </template>
 
 <style scoped>
